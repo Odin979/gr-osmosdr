@@ -20,7 +20,7 @@
 ########################################################################
 # Project setup
 ########################################################################
-cmake_minimum_required(VERSION 3.7)
+cmake_minimum_required(VERSION 3.8)
 project(gr-osmosdr CXX C)
 include(GNUInstallDirs)
 enable_testing()
@@ -42,7 +42,7 @@ list(INSERT CMAKE_MODULE_PATH 0 ${CMAKE_SOURCE_DIR}/cmake/Modules)
 
 # Find GNURadio (pmt and runtime are core, always included)
 include(FindPkgConfig)
-find_package(Gnuradio "3.9" REQUIRED COMPONENTS blocks fft filter)
+find_package(Gnuradio "3.8" REQUIRED COMPONENTS blocks fft filter)
 
 # Set the version information here
 set(VERSION_MAJOR 0)
